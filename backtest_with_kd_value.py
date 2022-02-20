@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[13]:
 
 
 import pandas as pd
@@ -156,5 +155,6 @@ def main():
     print('總報酬率 : ','{:3f}'.format(money-100),'%')
     if holding != 0:
         print('目前持有價位:%s,買於:%s'%(holding,buy_date[-1]))
-main()
+if __name__ == 'main' :
+    main()
 

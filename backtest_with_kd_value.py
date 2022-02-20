@@ -112,7 +112,7 @@ def date_to_int(stamp) :
     new_stamp = int(time.mktime(struct))
     return new_stamp
 def get_data():
-    stock_id = input()
+    stock_id = input('Please input stock id. e.g., 2330')
     start_date = input('Please input start date as type yyyy-mm-dd') +' 00:00:00'
     end_date = input('Please input end date as type yyyy-mm-dd') +' 23:59:59'
     stock = Stock(start = start_date, end = end_date, stock_id=stock_id)
